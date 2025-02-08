@@ -1,0 +1,42 @@
+/* Centering the error page */
+.error-container {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Error Image Styling */
+.error-image {
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Heading Styling */
+.error-container h1 {
+    font-size: 2rem;
+    color: #0c4e7b;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.error-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #0c4e7b;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.home-button:hover {
+    background-color: #005e84;
+}

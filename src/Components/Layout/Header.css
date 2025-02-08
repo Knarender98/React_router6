@@ -1,0 +1,38 @@
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c4e7b; /* Dark blue background */
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Individual Link Styles */
+.nav-item {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #e0eafc; /* Light blue hover effect */
+}
+
+.nav-links .active {
+    color: rgb(179, 216, 179);
+    text-decoration: underline;
+}

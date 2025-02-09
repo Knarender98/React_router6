@@ -1,5 +1,11 @@
-export const Footer = ()=> {
-    return <h1>
-        Footer
-    </h1>
-}
+import "./Footer.css"; // Import the separate CSS file
+
+export const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <p>&copy; {new Date().getFullYear()} NK. All Rights Reserved.</p>
+      </div>
+    </footer>
+  );
+};

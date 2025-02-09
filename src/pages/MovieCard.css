@@ -10,4 +10,32 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     background-color: rgb(218, 225, 225);
     margin: 10px;
+    overflow: hidden; /* Prevents card from growing */
+}
+
+.card img {
+    width: 90%;
+    height: 60%;
+    object-fit: cover;
+}
+
+/* Title (Plot) */
+.card h2 {
+    font-size: 16px;
+    max-height: 60px; /* Limit height */
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word; /* Break long words */
+    text-align: center;
+}
+
+/* Additional Info */
+.card p {
+    font-size: 14px;
+    max-height: 40px; /* Prevents overflow */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
 }

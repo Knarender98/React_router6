@@ -1,0 +1,37 @@
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c4e7b; /* Matching dark blue background */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Individual Footer Item */
+.footer-item {
+    text-decoration: none;
+    font-size: 8px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-item:hover {
+    color: #e0eafc; /* Light blue hover effect */
+}

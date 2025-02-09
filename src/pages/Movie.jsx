@@ -1,11 +1,18 @@
-import { useLoaderData } from "react-router-dom"
+import { useLoaderData } from "react-router-dom";
 import { MovieCard } from "./MovieCard";
 
-export const Movie = ()=> {
-
+export const Movie = () => {
     const moviesData = useLoaderData();
-    console.log(moviesData)
 
-    return <MovieCard />
-    
-}
+    return (
+        <section>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
+                {moviesData.Search.map((curMovie) => (
+                    <div key={curMovie.imdbID} style={{ width: "calc(25% - 16px)" }}>
+                        <MovieCard curMovie={curMovie} />
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
+};

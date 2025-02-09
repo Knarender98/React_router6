@@ -1,6 +1,6 @@
 export const getMoviesData = async()=> {
     try {
-        const response  = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=c6e45184");
+        const response  = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=c6e45184&s=titanic&page=1");
         const data = response.json();
         return data;
     } catch (error) {
